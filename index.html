@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="/Assets/fonts/stylesheet.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="Assets/css/materialize.min.css">
+    <link rel="stylesheet" href="Assets/css/animate.css">
+    <!-- Estilos Página-->
+    <link rel="stylesheet" href="Assets/css/master.css">
+    <title>Parallax - Interactive</title>
+</head>
+
+<body>
+    
+    <div id="vertical-menu" class="animated">
+        <button class="btn button" data-slide="2">Mapa</button>
+        <img src="Assets/img/mapa_thumbs.png" id="map" alt="">
+        <div class="route">
+            <img src="Assets/img/route.png" id="route" alt="">
+            <div data-btn="1" id="text1" class="textos button" data-slide="3">Punto de partida: Generalidades</div>
+            <div data-btn="1" id="point1" class="point animate button" data-slide="3"></div>
+            <div data-btn="2" id="text2" class="textos button" data-slide="4">Concepto clave</div>
+            <div data-btn="2" id="point2" class="point animate button" data-slide="4"></div>
+            <div data-btn="3" id="text3" class="textos button" data-slide="5">Biodiversidad <br>Servicios ecosistémicos</div>
+            <div data-btn="3" id="point3" class="point animate button" data-slide="5"></div>
+            <div data-btn="4" id="text4" class="textos button" data-slide="6">Concepto clave:<br>Transacciones socioecológicas</div>
+            <div data-btn="4" id="point4" class="point animate button" data-slide="6"></div>
+            <div data-btn="5" id="text5" class="textos button" data-slide="7">Concepto clave:<br>Conservación de la biodiversidad (1)</div>
+            <div data-btn="5" id="point5" class="point animate button" data-slide="7"></div>
+            <div data-btn="6" id="text6" class="textos button" data-slide="8">Concepto clave:<br>Conservación de la biodiversidad (2)</div>
+            <div data-btn="6" id="point6" class="point animate button" data-slide="8"></div>
+            <div data-btn="7" id="text7" class="textos button" data-slide="9">Concepto clave:<br>Gobernanza</div>
+            <div data-btn="7" id="point7" class="point animate button" data-slide="9"></div>
+            <div data-btn="8" id="text8" class="textos button" data-slide="10">Áreas de conservación municipal</div>
+            <div data-btn="8" id="point8" class="point animate button" data-slide="10"></div>
+            <div data-btn="9" id="text9" class="textos button" data-slide="11">Punto de llegada</div>
+            <div data-btn="9" id="point9" class="point animate button" data-slide="11"></div>
+        </div>
+    </div>
+
+    <main class="wrapper">
+        <div class="fondos">
+            <img src="Assets/img/Fondos/bg1.png" alt="">
+            <img src="Assets/img/Fondos/bg2.png" alt="">
+            <img src="Assets/img/Fondos/bg3.png" alt="">
+            <img src="Assets/img/Fondos/bg4.png" alt="">
+            <img src="Assets/img/Fondos/bg5.png" alt="">
+            <img src="Assets/img/Fondos/bg6.png" alt="">
+            <img src="Assets/img/Fondos/bg7.png" alt="">
+            <img src="Assets/img/Fondos/bg8.png" alt="">
+            <img src="Assets/img/Fondos/bg9.png" alt="">
+            <img src="Assets/img/Fondos/bg10.png" alt="">
+            <img src="Assets/img/Fondos/bg11.png" alt="">
+        </div>
+
+        <div class="fondos-animados">
+            <div class="images" id="arbol1">
+                <img data-stellar-ratio="0.9" src="Assets/img/arbol_01.png" alt="arbol">
+            </div>
+            <div class="images" id="fondo1">
+                <img data-stellar-ratio="1.1" src="Assets/img/bg2.png" alt="fondo_1">
+            </div>
+            <div class="images" id="arbol2">
+                <img data-stellar-ratio="1.1" src="Assets/img/arbol_02.png" alt="">
+            </div>
+            <div class="images" id="montana1">
+                <img data-stellar-ratio="1" src="Assets/img/pic_slide3_1.png" alt="">
+            </div>
+            <div class="images" id="casa">
+                <img data-stellar-ratio="1" src="Assets/img/pic_slide3_2.png" alt="">
+            </div>
+            <div class="images" id="fondo2">
+                <img  src="Assets/img/bg3.png" alt="fondo_2">
+            </div>
+            <div class="images" id="fondo3">
+                <img src="Assets/img/bg4.png" alt="fondo_3">
+            </div>
+            <div class="images" id="fondo4">
+                <img src="Assets/img/bg5.png" alt="fondo_4">
+            </div>
+            <div class="images" id="arbol3">
+                <img data-stellar-ratio="2.5" src="Assets/img/arbol_03.png" alt="arbol3">
+            </div>
+        </div>
+
+        <div class="navigation">
+            <div id="logo" class="animated"></div>
+            <div class="navigate button" data-slide="" id="prev"><img src="Assets/img/btn_prev.png" alt="previous">
+            </div>
+            <div class="navigate button" data-slide="" id="next"><img src="Assets/img/btn_next.png" alt="next"></div>
+        </div>
+
+        <div id="slide1" class="slide" data-slide="1">
+            <div class="filter"></div>
+            <div class="content animated zoomIn delay-1s" >
+                <div class="content-left">
+                    <img src="Assets/img/logo.png" alt="logo">
+                    <h4>Herramientas para la conservación de la biodiversidad en municipios</h4>
+                </div>
+                <div class="separator"></div>
+                <div class="content-right">
+                    <p>Bienvenidos a la ruta hacia las áreas de conservación.</p>
+                    <p>Aquí, aprenderás sobre los conceptos básicos, para la gestión de estas áreas en tu territorio</p>
+                    <h6>¡Éxitos!</h6>
+                    <a class="button btn" data-slide="2">Inicio</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="slide2" class="slide" data-slide="2">
+            <div class="filter"></div>
+            <div class="content animated hide slow" >
+                <img src="Assets/img/mapa.png" width="100%" alt="mapa" class="mapa">
+                <a class="button" data-slide="3"><i class="material-icons">place</i></a>
+            </div>
+        </div>
+
+        <div id="slide3" class="slide" data-slide="3">
+            <div class="filter"></div>
+            <div class="content animated hide slow">
+                <div class="content-left">
+                    <div class="rounded">
+                        <img src="Assets/img/pic_slide3.png" alt="image">
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="content-right">
+                    <h5>Generalidades</h5>
+                    <p>En el territorio conviven los seres humanos con la biodiversidad. Mantienen relaciones dinámicas,
+                        en las que aparecen tensiones que en algunos casos desbordan la capacidad de oferta de los
+                        servicios ecosistémicos que ofrece la biodiversidad.</p>
+                    <p>Por esta razón, la gestión de la biodiversidad en los ámbitos nacional, regional y local debe
+                        estar direccionada hacia la generación de un equilibrio, una de las acciones que se pueden
+                        desarrollar es la creación de áreas de conservación para un aprovechamiento sostenible de la
+                        biodiversidad, que permita articular los procesos ecológicos con los procesos sociales.</p>
+                </div>
+            </div>
+
+        </div>
+                
+        <div id="slide4" class="slide" data-slide="4">
+            <div class="filter"></div>
+            <div class="content" data-stellar-ratio="2">
+                <div class="content-left">
+                    <div class="rounded-solid">
+                        <div class="rounded-doted">
+                            <img src="Assets/img/pic_slide4.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="content-right">
+                    <h5>Conceptos clave</h5>
+                    <p>A continuación, veremos algunos conceptos clave sobre cómo aportar al equilibrio en el aprovechamiento de los servicios de la biodiversidad.</p>
+                </div>
+                <div id="btn1" class="btn-inside">
+                    <p>Biodiversidad y servicios ecosistémicos</p>
+                </div>
+                <div id="btn2" class="btn-inside">
+                    <p>Transiciones socioecológicas</p>
+                </div>
+                <div id="btn3" class="btn-inside">
+                    <p>Conservación de la biodiversidad</p>
+                </div>
+                <div id="btn4" class="btn-inside">
+                    <p>Gobernanza</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="slide5" class="slide" data-slide="5">
+            <div class="filter"></div>
+            <div class="content" data-stellar-ratio="2">
+                <div class="header">
+                    <img src="Assets/img/pic_slide5_1.png" alt="title">
+                    <h6>Concepto clave:</h6>
+                    <h5>Biodiversidad</h5>
+                </div>
+                <div class="content-left">
+                    <img src="Assets/img/pic_slide5_2.png" alt="image">
+                    <img src="Assets/img/pic_slide5_3.png" alt="image">
+                </div>
+                <div class="content-right">
+                    <p>Es una compleja red de relaciones y procesos ecológicos que hace posible el mantenimiento de la vida en el planeta.</p>
+                    <p>Colombia es el segundo país más biodiverso del mundo. Esto muestra el gran reto de su conservación.<a href="" class="btn">Ver más</a></p>
+                </div>
+                <div class="foot">
+                    <a href="#" class="btn #F28F2A">Servicios ecosistémicos</a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="slide6" class="slide" data-slide="6">
+            <div class="content" data-stellar-ratio="2">
+                <div class="header">
+                    <img src="Assets/img/pic_slide5_1.png" alt="title">
+                    <h6>Concepto clave:</h6>
+                    <h5>Transiciones socioecológicas</h5>
+                </div>
+                <div class="content-left">
+                    <div class="cards">
+                        Procesos de gestión de la biodiversidad, apropiados y agenciados por diferentes actores, con el fonde modificar la trayectoria de cambio indeseado en el sistema ecológico y social.
+                    </div>
+                    <div class="cards">
+                        Es clave que estas acciones reconozcan la interdependencia de los procesos ecológicos y sociales.
+                    </div>
+                    <div class="cards">
+                        Uno de los retos actuales de la gestión transformativa de la biodiversidad se refiere a introducir espacios posibles para la biodiversidad en el futuro de las ciudades, los paisajes rurales y la agroindustria.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="slide7" class="slide" data-slide="7">
+            <div class="content" data-stellar-ratio="2">
+                <div class="header">
+                    <img src="Assets/img/pic_slide5_1.png" alt="title">
+                    <h6>Concepto clave:</h6>
+                    <h5>Conservación de la biodiversidad in situ</h5>
+                </div>
+                <p>Para que se mantenga o incremente la resiliencia de los sistemas socioecológicos y, con ella, el suministro de servicios ecosistémicos fundamentales para el bienestar humano, esta debe ser entendida y gestionada a partir del balance entre:</p>
+                <div class="content-left">
+                    <div class="cards">acciones de preservación</div>
+                    <div class="cards">uso sostenible</div>
+                    <div class="cards">generación de conocimiento</div>
+                    <div class="cards">restauración de la biodiversidad</div>
+                </div>
+                <div class="foot">
+                    Resiliencia de los sistemas socioecológicos
+                </div>
+            </div>
+        </div>
+        
+        <div id="slide8" class="slide" data-slide="8">
+            <div class="content" data-stellar-ratio="2">
+                <div class="header">
+                    <img src="Assets/img/pic_slide5_1.png" alt="title">
+                    <h6>Concepto clave:</h6>
+                    <h5>Conservación de la biodiversidad in situ</h5>
+                </div>
+                <div class="slide_tab">
+                    <div id="slider1" class="content-slider">
+                        <p>Espacios geográficos delimitados, reconocidos, dedicados y gestionados a partir de medios legales u otros para conseguir la conservación de la naturaleza a largo plazo, de sus servicios ecosistémicos y de sus valores culturales asociados (Dudley,2008).</p>
+                        <img src="Assets/img/pic_slide8_1.png" alt="">
+                    </div>
+                    <div id="slider2" class="content-slider">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo cumque inventore eligendi ducimus odit provident, tempore beatae temporibus vero ea natus, doloribus minus optio ipsam nobis voluptatem minima. Saepe, reprehenderit?.</p>
+                        <img src="Assets/img/pic_slide8_2.png" alt="">
+                    </div>
+                    <div id="slider3" class="content-slider">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo cumque inventore eligendi ducimus odit provident, tempore beatae temporibus vero ea natus, doloribus minus optio ipsam nobis voluptatem minima. Saepe, reprehenderit?.</p>
+                        <img src="Assets/img/pic_slide8_3.png" alt="">
+                    </div>
+                    <div id="slider4" class="content-slider">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo cumque inventore eligendi ducimus odit provident, tempore beatae temporibus vero ea natus, doloribus minus optio ipsam nobis voluptatem minima. Saepe, reprehenderit?.</p>
+                        <img src="Assets/img/pic_slide8_4.png" alt="">
+                    </div>
+                    <div id="slider5" class="content-slider">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo cumque inventore eligendi ducimus odit provident, tempore beatae temporibus vero ea natus, doloribus minus optio ipsam nobis voluptatem minima. Saepe, reprehenderit?.</p>
+                        <img src="Assets/img/pic_slide8_4.png" alt="">
+                    </div>
+                </div>
+                <div class="botonera">
+                    <div id="btnS1" class="btnTab actived">Áreas protegidas</div>
+                    <div id="btnS2" class="btnTab">Estrategias complementarias de conservación</div>
+                    <div id="btnS3" class="btnTab">Conservación de la biodiversidad in situ en colombia</div>
+                    <div id="btnS4" class="btnTab">Oportunidades de la creación de áreas de áreas de conservación</div>
+                    <div id="btnS5" class="btnTab">¡Importante!</div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="slide9" class="slide" data-slide="9">
+            <div class="content" data-stellar-ratio="2">
+                <div class="header">
+                    <img src="Assets/img/pic_slide5_1.png" alt="title">
+                    <h6>Concepto clave:</h6>
+                    <h5>Gobernanza</h5>
+                </div>
+                <div class="content-left">
+                    <div class="circles">
+                        <img src="Assets/img/pic_slide9_1.png" alt="">
+                        <img src="Assets/img/pic_slide9_1_1.png" alt="">
+                        <img src="Assets/img/pic_slide9_1_2.png" alt="">
+                        <img src="Assets/img/pic_slide9_1_3.png" alt="">
+                        <img src="Assets/img/pic_slide9_1_4.png" alt="">
+                        <img src="Assets/img/icon_slide9_1.png" class="icono" id="icon1" alt="">
+                        <img src="Assets/img/icon_slide9_2.png" class="icono" id="icon2" alt="">
+                        <img src="Assets/img/icon_slide9_4.png" class="icono" id="icon3" alt="">
+                        <img src="Assets/img/icon_slide9_4.png" class="icono" id="icon4" alt="">
+                    </div>
+                    <div class="textos">
+                        <div id="txt_01" class="cuadro_texto">Por parte del gobierno: nacional, subnacional (regional, municipal), delegada.</div>
+                        <div id="txt_02" class="cuadro_texto">Compartida: puede ser en colaboración o conjunta.</div>
+                        <div id="txt_03" class="cuadro_texto">Por grupos étnicos y comunidades locales.</div>
+                        <div id="txt_04" class="cuadro_texto">Privada: áreas bajo control o propiedad de individuos, ONG o empresas privadas.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="slide10" class="slide" data-slide="10">
+
+        </div>
+        <div id="slide11" class="slide" data-slide="11">
+            <div class="filter"></div>
+            <div class="content" data-stellar-ratio="2">
+                <div class="content-left">
+                    <img src="Assets/img/logo.png" alt="logo">
+                    <h4>Herramientas para la conservación de la biodiversidad en municipios</h4>
+                </div>
+                <div class="separator"></div>
+                <div class="content-right">
+                    <p>Hemos llegado a la meta.</p>
+                    <p>Con el <strong>reconocimiento</strong> de estas áreas, los</p>
+                    <p>municipios contribuyen al cumplimiento de los</p>
+                    <p>objetivos generales de conservación, nacionales e</p>
+                    <p>internacionales, y al desarrollo sostenible del país</p><br>
+                    <p><strong>Te invitamos a que revises el documento base</strong></p>
+                    <p><strong>de esta Unidad para que profundices sobre</strong></p>
+                    <p><strong>estos conceptos</strong></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script necesarios para ejecución del Parallax -->
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
+    <script src="Assets/js/jquery-2.1.0.min.js"></script>
+    <script src="Assets/js/materialize.min.js"></script>
+    <script src="Assets/js/jquery.stellar.min.js"></script>
+    <script src="Assets/js/jquery.easing.1.3.js"></script>
+    <script src="Assets/js/jquery.waypoints.js"></script>
+    <script src="Assets/js/master.js"></script>
+</body>
+
+</html>
