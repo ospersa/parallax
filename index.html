@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Import Google Icon Font-->
-    <link rel="stylesheet" href="/Assets/fonts/stylesheet.css">
+    <link rel="stylesheet" href="Assets/fonts/stylesheet.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="Assets/css/materialize.min.css">
@@ -18,30 +18,44 @@
 </head>
 
 <body>
-    
+    <div class="loader">
+        <div id="page-loader" class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-teal-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="vertical-menu" class="animated">
         <button class="btn button" data-slide="2">Mapa</button>
         <img src="Assets/img/mapa_thumbs.png" id="map" alt="">
         <div class="route">
             <img src="Assets/img/route.png" id="route" alt="">
-            <div data-btn="1" id="text1" class="textos button" data-slide="3">Punto de partida: Generalidades</div>
             <div data-btn="1" id="point1" class="point animate button" data-slide="3"></div>
-            <div data-btn="2" id="text2" class="textos button" data-slide="4">Concepto clave</div>
+            <div data-btn="1" id="text1" class="textos button" data-slide="3">Punto de partida: Generalidades</div>
             <div data-btn="2" id="point2" class="point animate button" data-slide="4"></div>
-            <div data-btn="3" id="text3" class="textos button" data-slide="5">Biodiversidad <br>Servicios ecosistémicos</div>
+            <div data-btn="2" id="text2" class="textos button" data-slide="4">Concepto clave</div>
             <div data-btn="3" id="point3" class="point animate button" data-slide="5"></div>
-            <div data-btn="4" id="text4" class="textos button" data-slide="6">Concepto clave:<br>Transacciones socioecológicas</div>
+            <div data-btn="3" id="text3" class="textos button" data-slide="5">Biodiversidad <br>Servicios ecosistémicos</div>
             <div data-btn="4" id="point4" class="point animate button" data-slide="6"></div>
-            <div data-btn="5" id="text5" class="textos button" data-slide="7">Concepto clave:<br>Conservación de la biodiversidad (1)</div>
+            <div data-btn="4" id="text4" class="textos button" data-slide="6">Concepto clave:<br>Transacciones socioecológicas</div>
             <div data-btn="5" id="point5" class="point animate button" data-slide="7"></div>
-            <div data-btn="6" id="text6" class="textos button" data-slide="8">Concepto clave:<br>Conservación de la biodiversidad (2)</div>
+            <div data-btn="5" id="text5" class="textos button" data-slide="7">Concepto clave:<br>Conservación de la biodiversidad (1)</div>
             <div data-btn="6" id="point6" class="point animate button" data-slide="8"></div>
-            <div data-btn="7" id="text7" class="textos button" data-slide="9">Concepto clave:<br>Gobernanza</div>
+            <div data-btn="6" id="text6" class="textos button" data-slide="8">Concepto clave:<br>Conservación de la biodiversidad (2)</div>
             <div data-btn="7" id="point7" class="point animate button" data-slide="9"></div>
-            <div data-btn="8" id="text8" class="textos button" data-slide="10">Áreas de conservación municipal</div>
+            <div data-btn="7" id="text7" class="textos button" data-slide="9">Concepto clave:<br>Gobernanza</div>
             <div data-btn="8" id="point8" class="point animate button" data-slide="10"></div>
-            <div data-btn="9" id="text9" class="textos button" data-slide="11">Punto de llegada</div>
+            <div data-btn="8" id="text8" class="textos button" data-slide="10">Áreas de conservación municipal</div>
             <div data-btn="9" id="point9" class="point animate button" data-slide="11"></div>
+            <div data-btn="9" id="text9" class="textos button" data-slide="11">Punto de llegada</div>
         </div>
     </div>
 
@@ -86,7 +100,7 @@
                 <img src="Assets/img/bg5.png" alt="fondo_4">
             </div>
             <div class="images" id="arbol3">
-                <img data-stellar-ratio="2.5" src="Assets/img/arbol_03.png" alt="arbol3">
+                <img src="Assets/img/arbol_03.png" alt="arbol3">
             </div>
         </div>
 
@@ -120,6 +134,17 @@
             <div class="content animated hide slow" >
                 <img src="Assets/img/mapa.png" width="100%" alt="mapa" class="mapa">
                 <a class="button" data-slide="3"><i class="material-icons">place</i></a>
+                <div class="texto" data-slide="3">Punto de partida:<br>Generalidades</div>
+                <a class="button" data-slide="5"><i class="material-icons">place</i></a>
+                <div class="texto" data-slide="5">Concepto clave:<br>Biodiversidad Servicios ecosistémicos</div>
+                <a class="button" data-slide="6"><i class="material-icons">place</i></a>
+                <div class="texto" data-slide="6">Concepto clave:<br>Transiciones socioecológicas</div>
+                <a class="button" data-slide="7"><i class="material-icons">place</i></a>
+                <div class="texto" data-slide="7">Concepto clave:<br>Conservación de la biodiversidad</div>
+                <a class="button" data-slide="9"><i class="material-icons">place</i></a>
+                <div class="texto" data-slide="9">Concepto clave:<br>Gobernanza</div>
+                <a class="button" data-slide="10"><i class="material-icons">place</i></a>
+                <div class="texto" data-slide="10">Punto de llegada:<br>Áreas de conservación municipal</div>
             </div>
         </div>
 
@@ -193,7 +218,7 @@
                     <p>Colombia es el segundo país más biodiverso del mundo. Esto muestra el gran reto de su conservación.<a href="" class="btn">Ver más</a></p>
                 </div>
                 <div class="foot">
-                    <a href="#" class="btn #F28F2A">Servicios ecosistémicos</a>
+                    <a href="#modal1" class="btn #F28F2A modal-trigger">Servicios ecosistémicos</a>
                 </div>
             </div>
         </div>
@@ -206,13 +231,13 @@
                     <h5>Transiciones socioecológicas</h5>
                 </div>
                 <div class="content-left">
-                    <div class="cards">
+                    <div class="cards animated hide">
                         Procesos de gestión de la biodiversidad, apropiados y agenciados por diferentes actores, con el fonde modificar la trayectoria de cambio indeseado en el sistema ecológico y social.
                     </div>
-                    <div class="cards">
+                    <div class="cards animated hide">
                         Es clave que estas acciones reconozcan la interdependencia de los procesos ecológicos y sociales.
                     </div>
-                    <div class="cards">
+                    <div class="cards animated hide">
                         Uno de los retos actuales de la gestión transformativa de la biodiversidad se refiere a introducir espacios posibles para la biodiversidad en el futuro de las ciudades, los paisajes rurales y la agroindustria.
                     </div>
                 </div>
@@ -228,12 +253,12 @@
                 </div>
                 <p>Para que se mantenga o incremente la resiliencia de los sistemas socioecológicos y, con ella, el suministro de servicios ecosistémicos fundamentales para el bienestar humano, esta debe ser entendida y gestionada a partir del balance entre:</p>
                 <div class="content-left">
-                    <div class="cards">acciones de preservación</div>
-                    <div class="cards">uso sostenible</div>
-                    <div class="cards">generación de conocimiento</div>
-                    <div class="cards">restauración de la biodiversidad</div>
+                    <div class="cards animated hide">acciones de preservación</div>
+                    <div class="cards animated hide">uso sostenible</div>
+                    <div class="cards animated hide">generación de conocimiento</div>
+                    <div class="cards animated hide">restauración de la biodiversidad</div>
                 </div>
-                <div class="foot">
+                <div class="foot animated">
                     Resiliencia de los sistemas socioecológicos
                 </div>
             </div>
@@ -308,7 +333,59 @@
         </div>
         
         <div id="slide10" class="slide" data-slide="10">
-
+            <div class="content">
+                <div class="header">
+                    <img src="Assets/img/pic_slide5_1.png" alt="title">
+                    <h5>Áreas de conservación municipal</h5>
+                </div>
+                <div class="slide_tab">
+                    <div id="arrowPrev" data-slider=""><img src="Assets/img/btn_prev.png" alt=""></div>
+                    <div id="arrowNext" data-slider="1"><img src="Assets/img/btn_next.png" alt=""></div>
+                    <div id="slider1" data-slider="1" class="content-slider animated">
+                        <img src="Assets/img/pic_slide10_1.png" alt="">
+                    </div>
+                    <div id="slider2" data-slider="2" class="content-slider hide animated">
+                        <img src="Assets/img/pic_slide10_2.png" alt="">
+                    </div>
+                    <div id="slider3" data-slider="3" class="content-slider hide animated">
+                        <img src="Assets/img/pic_slide10_3.png" alt="">
+                    </div>
+                    <div id="slider4" data-slider="4" class="content-slider hide animated">
+                        <img src="Assets/img/pic_slide10_4.png" alt="">
+                    </div>
+                    <div id="slider5" data-slider="5" class="content-slider hide animated">
+                        <img src="Assets/img/pic_slide10_5.png" alt="">
+                    </div>
+                    <div id="slider6" data-slider="6" class="content-slider hide animated">
+                        <img src="Assets/img/pic_slide10_6.png" alt="">
+                    </div>
+                    <div id="slider7" data-slider="7" class="content-slider hide animated">
+                        <img src="Assets/img/pic_slide10_7.png" alt="">
+                    </div>
+                    <div id="slider8" data-slider="8" class="content-slider hide animated">
+                        <img src="Assets/img/pic_slide10_8.png" alt="">
+                    </div>
+                    <div id="slider9" data-slider="9" class="content-slider hide animated">
+                        <img src="Assets/img/pic_slide10_9.png" alt="">
+                    </div>
+                    <div id="slider10" data-slider="10" class="content-slider hide animated">
+                        <img src="Assets/img/pic_slide10_10.png" alt="">
+                    </div>
+                </div>
+                <div class="textos">
+                    <div id="txt01" data-slider="1" class="animated">Consideradas como espacios naturales o modificados, continentales o marinos, que poseen biodiversidad, valores naturales o valores culturales importantes, principalmente de interes local.</div>
+                    <div id="txt02" data-slider="2" class="animated hide">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio quaerat quos harum, mollitia ab molestiae atque adipisci doloribus enim aliquam soluta incidunt similique saepe! Consequuntur cum neque reiciendis! Eos, vel?</div>
+                    <div id="txt03" data-slider="3" class="animated hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores recusandae, nam, harum exercitationem porro eum minima quaerat inventore iusto, quia molestiae sapiente. Asperiores perspiciatis tenetur mollitia numquam quas reprehenderit.</div>
+                    <div id="txt04" data-slider="4" class="animated hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores recusandae, nam, harum exercitationem porro eum minima quaerat inventore iusto, quia molestiae sapiente. Asperiores perspiciatis tenetur mollitia numquam quas reprehenderit.</div>
+                    <div id="txt05" data-slider="5" class="animated hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores recusandae, nam, harum exercitationem porro eum minima quaerat inventore iusto, quia molestiae sapiente. Asperiores perspiciatis tenetur mollitia numquam quas reprehenderit.</div>
+                    <div id="txt06" data-slider="6" class="animated hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores recusandae, nam, harum exercitationem porro eum minima quaerat inventore iusto, quia molestiae sapiente. Asperiores perspiciatis tenetur mollitia numquam quas reprehenderit.</div>
+                    <div id="txt07" data-slider="7" class="animated hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores recusandae, nam, harum exercitationem porro eum minima quaerat inventore iusto, quia molestiae sapiente. Asperiores perspiciatis tenetur mollitia numquam quas reprehenderit.</div>
+                    <div id="txt08" data-slider="8" class="animated hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores recusandae, nam, harum exercitationem porro eum minima quaerat inventore iusto, quia molestiae sapiente. Asperiores perspiciatis tenetur mollitia numquam quas reprehenderit.</div>
+                    <div id="txt09" data-slider="9" class="animated hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores recusandae, nam, harum exercitationem porro eum minima quaerat inventore iusto, quia molestiae sapiente. Asperiores perspiciatis tenetur mollitia numquam quas reprehenderit.</div>
+                    <div id="txt10" data-slider="10" class="animated hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolores recusandae, nam, harum exercitationem porro eum minima quaerat inventore iusto, quia molestiae sapiente. Asperiores perspiciatis tenetur mollitia numquam quas reprehenderit.</div>
+                </div>
+                <div class="borde"></div>
+            </div>
         </div>
         <div id="slide11" class="slide" data-slide="11">
             <div class="filter"></div>
@@ -327,6 +404,52 @@
                     <p><strong>Te invitamos a que revises el documento base</strong></p>
                     <p><strong>de esta Unidad para que profundices sobre</strong></p>
                     <p><strong>estos conceptos</strong></p>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content valign-wrapper">
+                <div class="row center-align valign-wrapper">
+                    <div class="col l3 m3 s12 left-align">
+                        <h5>Servicios ecosistémicos</h5>
+                        <p>Recursos que generan beneficios directos e indirectos que ofrece la biodiversidad a los humanos. Están clasificados así:</p>
+                    </div>
+                    <div class="col l3 m3 s12">
+                        <img src="Assets/img/pic_slide5_4.png" alt="">
+                        <h6>Aprovisionamiento</h6>
+                        <ul>
+                            <li>- Alimentos</li>
+                            <li>- Fibras</li>
+                            <li>- Maderas</li>
+                            <li>- Agua</li>
+                            <li>- Pieles</li>
+                            <li>- Mascotas</li>
+                            <li>- Recursos genéticos</li>
+                        </ul>
+                    </div>
+                    <div class="col l3 m3 s12">
+                        <img src="Assets/img/pic_slide5_5.png" alt="">
+                        <h6>Regulación y soporte</h6>
+                        <ul>
+                            <li>- Calidad del aire</li>
+                            <li>- Regulación del clima</li>
+                            <li>- Control de la erosión</li>
+                            <li>- Control de enfermedades humanas</li>
+                            <li>- Purificación del agua</li>
+                        </ul>
+                    </div>
+                    <div class="col l3 m3 s12">
+                        <img src="Assets/img/pic_slide5_6.png" alt="">
+                        <h6>Regulación y soporte</h6>
+                        <ul>
+                            <li>- Calidad del aire</li>
+                            <li>- Regulación del clima</li>
+                            <li>- Control de la erosión</li>
+                            <li>- Control de enfermedades humanas</li>
+                            <li>- Purificación del agua</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
