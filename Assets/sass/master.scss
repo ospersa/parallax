@@ -859,7 +859,7 @@ body {
                     display: flex;
                     flex-direction: row;
                     img {
-                        max-width: 100%;
+                        min-width: 104.2%;
                         max-height: 100%;
                     }
                 }
@@ -934,6 +934,40 @@ body {
     background: #6a6a6a;
     z-index: 1000;
     color: #000;
+    .importante {
+        position: absolute;
+        bottom: 14vh;
+        background: #04003c;
+        color: white;
+        width: 10vw;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 2vw;
+        font-size: 1vw;
+        left: 2vw;
+        cursor: pointer;
+        .cuadro {
+            width: 18%;
+            background: #1d5ba7;
+            position: absolute;
+            height: 100%;
+            left: 0;
+        }
+        &:hover ~ .texto-hide {
+            display: flex;
+        }
+    }
+    .texto-hide {
+        position: absolute;
+        bottom: 2.8vh;
+        left: 2vw;
+        font-size: 0.8vw;
+        width: 22vw;
+        background: #c9c9c9;
+        padding: 10px;
+        display: none;
+        font-weight: 700;
+    }
     .modal-content {
         min-height: 69vh;
         .col {
