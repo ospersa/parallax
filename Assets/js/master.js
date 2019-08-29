@@ -18,13 +18,12 @@ $(document).ready(function () {
     let width = $(window).width();
     let height = $(window).height();
     width *= 11
-    //$('main').css({'width': width, 'height': height});
+    $('main').css({'width': width, 'height': height});
     
 
     /** Posicionamiento Elementos e Imágenes de Fondo */
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
-    $('.navigation').css({'width': windowWidth, 'height': windowHeight});
     $('.slide').css({'width': windowWidth + 'px'});
     $('.btn-inside').css({'width': ((windowWidth * 8.5) / 100)+'px', 'height': ((windowWidth * 8.5) / 100)+'px'});
     $('.rounded-doted').css({'width': ((windowWidth * 15) / 100)+'px', 'height': ((windowWidth * 15) / 100)+'px'});
@@ -64,7 +63,7 @@ $(document).ready(function () {
             
         } else if (posicion >= (windowWidth * 2) && posicion < (windowWidth * 3)) {
             // Slide 3
-            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'})
+            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'});
             $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '2');
             $('#next').attr('data-slide', '4');
@@ -77,21 +76,24 @@ $(document).ready(function () {
             $('#vertical-menu .route .point#point1, #vertical-menu .route .textos#text1').addClass('active');
         } else if (posicion >= (windowWidth * 3) && posicion < (windowWidth * 4)) {
             // Slide 4
-            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'})
+            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'});
+            $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '3');
             $('#next').attr('data-slide', '5');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point2, #vertical-menu .route .textos#text2').addClass('active');
         } else if (posicion >= (windowWidth * 4) && posicion < (windowWidth * 5)) {
             // Slide 5
-            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'})
+            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'});
+            $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '4');
             $('#next').attr('data-slide', '6');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point3, #vertical-menu .route .textos#text3').addClass('active');
         } else if (posicion >= (windowWidth * 5) && posicion < (windowWidth * 6)) {
             // Slide 6
-            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'})
+            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'});
+            $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '5');
             $('#next').attr('data-slide', '7');
             $('#slide6 .content .content-left .cards:nth-child(1)').removeClass('hide').addClass('flipInX delay-1s');
@@ -101,33 +103,37 @@ $(document).ready(function () {
             $('#vertical-menu .route .point#point4, #vertical-menu .route .textos#text4').addClass('active');
         } else if (posicion >= (windowWidth * 6) && posicion < (windowWidth * 7)) {
             // Slide 7
-            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'})
+            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'});
+            $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '6');
             $('#next').attr('data-slide', '8');
             $('#slide7 .content .content-left .cards:nth-child(1)').removeClass('hide').addClass('fadeInDown delay-1s');
             $('#slide7 .content .content-left .cards:nth-child(2)').removeClass('hide').addClass('fadeInDown delay-2s');
             $('#slide7 .content .content-left .cards:nth-child(3)').removeClass('hide').addClass('fadeInDown delay-3s');
             $('#slide7 .content .content-left .cards:nth-child(4)').removeClass('hide').addClass('fadeInDown delay-4s');
-            $('.foot').addClass('fadeInDown delay-5s');
+            $('.foot').removeClass('hide').addClass('fadeInDown delay-5s');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point5, #vertical-menu .route .textos#text5').addClass('active');
         } else if (posicion >= (windowWidth * 7) && posicion < (windowWidth * 8)) {
             // Slide 8
-            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'})
+            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'});
+            $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '7');
             $('#next').attr('data-slide', '9');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point6, #vertical-menu .route .textos#text6').addClass('active');
         } else if (posicion >= (windowWidth * 8) && posicion < (windowWidth * 9)) {
             // Slide 9
-            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'})
+            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'});
+            $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '8');
             $('#next').attr('data-slide', '10');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point7, #vertical-menu .route .textos#text7').addClass('active');
         } else if (posicion >= (windowWidth * 9) && posicion < (windowWidth * 10)) {
             // Slide 10
-            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'})
+            $('#vertical-menu, #prev, #next, #logo').css({'display': 'flex'});
+            $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '9');
             $('#next').attr('data-slide', '11');
             $('#vertical-menu').removeClass('fadeOutUp').addClass('fadeInDown delay-3s');
