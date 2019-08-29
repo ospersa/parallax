@@ -18,12 +18,13 @@ $(document).ready(function () {
     let width = $(window).width();
     let height = $(window).height();
     width *= 11
-    $('main').css({'width': width, 'height': height});
+    //$('main').css({'width': width, 'height': height});
     
 
     /** Posicionamiento Elementos e Imágenes de Fondo */
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
+    $('.navigation').css({'width': windowWidth, 'height': windowHeight});
     $('.slide').css({'width': windowWidth + 'px'});
     $('.btn-inside').css({'width': ((windowWidth * 8.5) / 100)+'px', 'height': ((windowWidth * 8.5) / 100)+'px'});
     $('.rounded-doted').css({'width': ((windowWidth * 15) / 100)+'px', 'height': ((windowWidth * 15) / 100)+'px'});
