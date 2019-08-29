@@ -89,8 +89,8 @@ body {
         position: fixed;
         top: 2vh;
         left: 2vw;
-        width: 20vw;
-        height: 13vh;
+        width: 16vw;
+        height: 11vh;
         z-index: 10;
     }
 
@@ -991,6 +991,14 @@ body {
     
     .modal-content {
         min-height: 69vh;
+        #close {
+            position: absolute;
+            top: 2vh;
+            right: 2vw;
+            text-align: center;
+            font-weight: 800;
+            font-size: 1.5vw;
+        }
         .col {
             img {
                 max-width: 150px;
@@ -1005,6 +1013,7 @@ body {
             h6 {
                 font-weight: 600;
                 border-bottom: 1px solid #000;
+                font-size: 1.05rem;
             }
             ul li {
                 font-size: 0.9vw;
