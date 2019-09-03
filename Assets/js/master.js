@@ -18,17 +18,17 @@ $(document).ready(function () {
     let width = $(window).width();
     let height = $(window).height();
     width *= 11
-    $('main').css({'width': width, 'height': height});
+    $('main').css('max-height', height+'px');
+    $('.fondos').css({'width': width+'px', 'max-height': height+'px'});
     
-
     /** Posicionamiento Elementos e Imágenes de Fondo */
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
-    $('.slide').css({'width': windowWidth + 'px'});
+    $('.slide').css({'width': windowWidth + 'px', 'height': height + 'px'});
     $('.btn-inside').css({'width': ((windowWidth * 8.5) / 100)+'px', 'height': ((windowWidth * 8.5) / 100)+'px'});
     $('.rounded-doted').css({'width': ((windowWidth * 15) / 100)+'px', 'height': ((windowWidth * 15) / 100)+'px'});
-    $('.fondos img').css('width', windowWidth);
-    $('.fondos-animados').css('width', width);
+    $('.fondos img').css({'width': windowWidth, 'height': windowHeight});
+    $('.fondos-animados').css({'width': width, 'height': windowHeight});
     $('.fondos-animados div').css({'width': windowWidth, 'height': windowHeight });
     $('.fondos-animados #fondo1').css('width', (windowWidth * 2));
     $('.fondos-animados #fondo1 img').css('width', '100%');
@@ -71,7 +71,7 @@ $(document).ready(function () {
                 $('#vertical-menu').removeClass('fadeOutUp');
                 $('#vertical-menu').addClass('fadeInDown');
             }
-            $('#slide3 .content').removeClass('hide').addClass('slideInDown');
+            $('#slide3 .content').removeClass('hide').addClass('bounceInDown');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point1, #vertical-menu .route .textos#text1').addClass('active');
         } else if (posicion >= (windowWidth * 3) && posicion < (windowWidth * 4)) {
@@ -80,6 +80,7 @@ $(document).ready(function () {
             $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '3');
             $('#next').attr('data-slide', '5');
+            $('#slide4 .content').removeClass('hide').addClass('bounceInDown');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point2, #vertical-menu .route .textos#text2').addClass('active');
         } else if (posicion >= (windowWidth * 4) && posicion < (windowWidth * 5)) {
@@ -88,6 +89,7 @@ $(document).ready(function () {
             $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '4');
             $('#next').attr('data-slide', '6');
+            $('#slide5 .content').removeClass('hide').addClass('bounceInDown');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point3, #vertical-menu .route .textos#text3').addClass('active');
         } else if (posicion >= (windowWidth * 5) && posicion < (windowWidth * 6)) {
@@ -96,6 +98,7 @@ $(document).ready(function () {
             $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '5');
             $('#next').attr('data-slide', '7');
+            $('#slide6 .content').removeClass('hide').addClass('bounceInDown');
             $('#slide6 .content .content-left .cards:nth-child(1)').removeClass('hide').addClass('flipInX delay-1s');
             $('#slide6 .content .content-left .cards:nth-child(2)').removeClass('hide').addClass('flipInX delay-2s');
             $('#slide6 .content .content-left .cards:nth-child(3)').removeClass('hide').addClass('flipInX delay-3s');
@@ -107,6 +110,7 @@ $(document).ready(function () {
             $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '6');
             $('#next').attr('data-slide', '8');
+            $('#slide7 .content').removeClass('hide').addClass('bounceInDown');
             $('#slide7 .content .content-left .cards:nth-child(1)').removeClass('hide').addClass('fadeInDown delay-1s');
             $('#slide7 .content .content-left .cards:nth-child(2)').removeClass('hide').addClass('fadeInDown delay-2s');
             $('#slide7 .content .content-left .cards:nth-child(3)').removeClass('hide').addClass('fadeInDown delay-3s');
@@ -120,6 +124,7 @@ $(document).ready(function () {
             $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '7');
             $('#next').attr('data-slide', '9');
+            $('#slide8 .content').removeClass('hide').addClass('bounceInDown');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point6, #vertical-menu .route .textos#text6').addClass('active');
         } else if (posicion >= (windowWidth * 8) && posicion < (windowWidth * 9)) {
@@ -128,6 +133,7 @@ $(document).ready(function () {
             $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '8');
             $('#next').attr('data-slide', '10');
+            $('#slide9 .content').removeClass('hide').addClass('bounceInDown');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point7, #vertical-menu .route .textos#text7').addClass('active');
         } else if (posicion >= (windowWidth * 9) && posicion < (windowWidth * 10)) {
@@ -136,6 +142,7 @@ $(document).ready(function () {
             $('#vertical-menu').addClass('fadeInDown');
             $('#prev').attr('data-slide', '9');
             $('#next').attr('data-slide', '11');
+            $('#slide10 .content').removeClass('hide').addClass('bounceInDown');
             $('#vertical-menu').removeClass('fadeOutUp').addClass('fadeInDown delay-3s');
             $('#vertical-menu .route .point, #vertical-menu .route .textos').removeClass('active');
             $('#vertical-menu .route .point#point8, #vertical-menu .route .textos#text8').addClass('active');

@@ -30,8 +30,6 @@ body {
 
     main {
         flex: 1 0 auto;
-        min-height: 100%;
-        max-height: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -65,7 +63,7 @@ body {
     flex-wrap: nowrap;
     z-index: 1;
     height: 100%;
-
+    
     .images {
         display: flex;
         flex-direction: row;
@@ -74,6 +72,7 @@ body {
 
         img{
             display: block !important;
+            bottom: 0;
         }
 
     }
@@ -129,10 +128,12 @@ body {
         width: 100%;
         height: 100%;
         z-index: -1;
+        top: 0;
+        left: 0;
     }
 
     .content {
-        position: absolute;
+        position: relative;
         display: flex;
         width: 56vw;
         height: 45vh;
@@ -221,7 +222,7 @@ body {
             background-color: rgba($verde, $alpha);
         }
         .content {
-            left: 7%;
+            left: 0;
             width: 70vw;
             .content-left {
                 width: 40%;
@@ -348,7 +349,7 @@ body {
         .content {
             height: 64vh;
             background-color: rgba($verde, $alpha);
-            left: 15vw !important;
+            left: -8vw;
 
             .content-left {
                 width: 35%;
@@ -390,7 +391,7 @@ body {
     &#slide4 {
         
         .content {
-            left: 6vw;
+            left: -11vw;
             width: 65vw;
             height: 60vh;
             background-color: rgba($verde, $alpha);
@@ -449,7 +450,7 @@ body {
                         justify-content: center;
                         img {
                             filter: opacity(0.7);
-                            clip-path: circle(50% at 50% 50%);
+                            border-radius: 50%;
                         }
                     }
                 }
@@ -474,6 +475,7 @@ body {
     &#slide5 {
         color: black;
         .content {
+            left: 0;
             width: 45vw;
             height: 67vh;
             .header {
@@ -483,6 +485,7 @@ body {
                 width: 30%;
                 position: absolute;
                 top: 14vh;
+                left: 0;
                 img {
                     border-radius: 50%;
                     max-width: 10vw;
@@ -570,7 +573,7 @@ body {
         color: black;
         
         .content {
-            left: 20vw;
+            left: -7vw;
             flex-direction: column;
             width: 50vw;
             height: 67vh;
@@ -644,7 +647,7 @@ body {
             flex-direction: column;
             width: 50vw;
             height: 67vh;
-            left: 17vw;
+            left: -7vw;
             .header {
                 display: block;
                 width: 61%;
@@ -722,7 +725,7 @@ body {
             flex-direction: column;
             width: 50vw;
             height: 67vh;
-            left: 17vw;
+            left: -7vw;
             .header {
                 display: block;
                 width: 61%;
@@ -828,7 +831,7 @@ body {
             flex-direction: column;
             width: 50vw;
             height: 67vh;
-            left: 17vw;
+            left: -7vw;
             .header {
                 display: block;
                 width: 65%;
@@ -934,7 +937,6 @@ body {
         }
         .content {
             width: 70vw;
-            left: 15%;
             .content-right p {
                 font-size: $pFontSize + 0.2;
                 font-weight: 100;
@@ -972,6 +974,7 @@ body {
                 position: absolute;
                 height: 100%;
                 left: 0;
+                top: 0;
             }
             &:hover ~ .texto-hide {
                 display: flex;
