@@ -314,4 +314,17 @@ $(document).ready(function () {
         }
     });
 
-})
+    var waypoint = new Waypoint({
+        element: document.getElementById('slide10'),
+        handler: function(direction) {
+          animateGallery();
+        },
+        horizontal: true,
+        offset: 'right-in-view'
+      })
+
+});
+
+function animateGallery () {
+    console.log("Pruebas");
+}
