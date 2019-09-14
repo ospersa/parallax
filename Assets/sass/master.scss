@@ -686,7 +686,7 @@ body {
                         max-width: 38vw;
                         max-height: 100%;
                     }
-                    &#slider4, &#slider5 img {
+                    &#slider4 img, &#slider5 img {
                         max-width: 25vw;
                     }
                 }
@@ -865,43 +865,20 @@ body {
                 width: 115%;
                 left: -6vw;
                 border: 10px solid #B3B3B3;
-                flex-direction: row;
-                display: flex;
-                .content-slider {
+                overflow: hidden;
+                ul {
                     display: flex;
-                    flex-direction: row;
+                    padding: 0;
+                    width: 400%;
+                    animation: slide 30s infinite alternate linear;
+                }
+                li {
                     width: 100%;
-                    background-size: 100% 100% !important;
-                    &#slider1 {
-                        background: url('../img/pic_slide10_1.png');
-                    }
-                    &#slider2 {
-                        background: url('../img/pic_slide10_2.png');
-                    }
-                    &#slider3 {
-                        background: url('../img/pic_slide10_3.png');
-                    }
-                    &#slider4 {
-                        background: url('../img/pic_slide10_4.png');
-                    }
-                    &#slider5 {
-                        background: url('../img/pic_slide10_5.png');
-                    }
-                    &#slider6 {
-                        background: url('../img/pic_slide10_6.png');
-                    }
-                    &#slider7 {
-                        background: url('../img/pic_slide10_7.png');
-                    }
-                    &#slider8 {
-                        background: url('../img/pic_slide10_8.png');
-                    }
-                    &#slider9 {
-                        background: url('../img/pic_slide10_9.png');
-                    }
-                    &#slider10 {
-                        background: url('../img/pic_slide10_10.png');
-                    }
+                    list-style: none;
+                }
+                img {
+                    width: 100%;
+                    height: 50vh;
                 }
                 #text_overlap {
                     position: absolute;
@@ -912,28 +889,7 @@ body {
                     background-color: rgba($verde, $alpha);
                     padding: 1vw;
                     right: 0;
-                }
-                #arrowPrev img{
-                    position: absolute;
-                    top: 50%;
-                    left: 2%;
-                    width: 40px;
-                    height: 40px;
-                    background: rgba(#484B33, 0.7);
-                    border-radius: 50%;
-                    cursor: pointer;
-                    z-index: 1000;
-                }
-                #arrowNext img{
-                    position: absolute;
-                    top: 50%;
-                    right: 2%;
-                    width: 40px;
-                    height: 40px;
-                    background: rgba(#484B33, 0.7);
-                    border-radius: 50%;
-                    cursor: pointer;
-                    z-index: 1000;
+                    top: 0;
                 }
             }
             .textos {
@@ -942,9 +898,6 @@ body {
                 left: -6vw;
                 background: $verde;
                 text-align: center;
-                /*#txt02, #txt03, #txt04, #txt05, #txt06, #txt07, #txt08, #txt09, #txt10 {
-                    display: none;
-                }*/
             }
             .borde {
                 position: relative;
@@ -953,10 +906,6 @@ body {
                 border-bottom: 2px solid $verde;
                 margin-top: 3px;
             }
-            /*#slider2, #slider3, #slider4, #slider5, #slider6, #slider7, #slider8, #slider9, #slider10 {
-                display: none;
-            }*/
-
         }
     }
 
@@ -975,6 +924,21 @@ body {
             }
         }
     }
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+    
 }
 
 .modal {

@@ -170,7 +170,7 @@ $(document).ready(function () {
     function goToByScroll(dataslide) {
         htmlbody.animate({
             scrollLeft: $('.slide[data-slide="' + dataslide + '"]').offset().left
-        }, 4000, 'jswing');
+        }, 2500, 'jswing');
     }
 
     button.click(function (e) {
@@ -314,17 +314,4 @@ $(document).ready(function () {
         }
     });
 
-    var waypoint = new Waypoint({
-        element: document.getElementById('slide10'),
-        handler: function(direction) {
-          animateGallery();
-        },
-        horizontal: true,
-        offset: 'right-in-view'
-      })
-
 });
-
-function animateGallery () {
-    console.log("Pruebas");
-}
